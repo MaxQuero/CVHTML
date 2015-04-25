@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Ma Super Fonte";
+    src: url('fonts/FORTE.TTF');
+}
+
+body{
+	padding : 0px 0px;
+	margin : 0px 0px;
+
+}
+
+#first
+{
+
+	width : 100%;
+	height : 400px;
+	/*background-image: url('images/first_background.png');*/
+	background-color:#25A94C;
+	background-repeat: repeat-x repeat-y;
+	text-align:center;
+}
+
+h1
+{
+	padding : 0px 0px;
+	margin : 0px 50%;
+}
+
+.photo
+{
+	height : 175px;
+	width : 175px;
+	margin-top : 5%; 
+}
+
+Panneau de configuration\Apparence et personnalisation\Polices
