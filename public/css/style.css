@@ -33,18 +33,19 @@ html, body {
 .page-header:before {
     content: "";
     position: absolute;
-    background-image : url('../img/banniere.png');
-    background-size: contain;
+    background-image : url('../img/mountains-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
     z-index: -1; /* Keep the background behind the content */
     height: 100%;
     width: 100%; /* Using Glen Maddern's trick /via @mente */
     transform: scale(1);
-    transform-origin: top left;
+    transform-origin: bottom left;
     filter: blur(3px);
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
 }
 
 .page-header{
@@ -70,8 +71,12 @@ h1{
 }
 
 .navbar{
+    margin : 0;
     margin-top: -10px;
     z-index: 9999;
+    background-color : #c0392b;
+    border-radius : 0;
+
 }
 /* ----------------------------------- INDEX ----------------------------- */
 
@@ -107,6 +112,29 @@ p.intro-title{
 }
 p.intro{
     font-size : 40px;
+}
+.mainbloc{
+    margin :0;
+    padding : 0;
+}
+
+.bloc{
+    padding : 0px;
+    padding-top : 50px;
+    padding-bottom : 150px;
+    color: white;
+
+}
+.presentation{
+    background-color : #34495e;
+}
+
+.skills{
+    color : #34495e;
+}
+
+.skills > .icone{
+    background
 }
 /* ----------------------------------- FOOTER ----------------------------- */
 
