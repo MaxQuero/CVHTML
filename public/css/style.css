@@ -33,19 +33,15 @@ html, body {
 .page-header:before {
     content: "";
     position: absolute;
-    background-image : url('../img/mountains-banner.jpg');
+    background-image : url('../img/material-mountains-banner.png');
     background-repeat: no-repeat;
-    background-size: 100% 120%;
+    background-size: cover;
+    background-position: 0px -400px;
     z-index: -1; /* Keep the background behind the content */
     height: 100%;
     width: 100%; /* Using Glen Maddern's trick /via @mente */
     transform: scale(1);
-    transform-origin: bottom left;
-    filter: blur(3px);
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
+
 }
 
 .page-header{
@@ -65,17 +61,17 @@ html, body {
     position: relative;
 
     -webkit-box-shadow:
-    0 0 0 10px   rgba(255,255,255,.2),
-    0 0 25px 2px rgba(0,0,0,.4),
-    inset 0 0 0 15px   rgba(255,255,155,.4);
+    0 0 0 10px   rgba(255,255,255,0),
+    0 0 25px 2px rgba(0,0,0,0),
+    inset 0 0 0 15px   rgba(255,255,155,0);
     -moz-box-shadow:
-    0 0 0 10px   rgba(255,255,255,.2),
-    0 0 25px 2px rgba(0,0,0,.4),
-    inset 0 0 0 15px   rgba(255,255,155,.4);
+    0 0 0 10px   rgba(255,255,255,0),
+    0 0 25px 2px rgba(0,0,0,0),
+    inset 0 0 0 15px   rgba(255,255,155,0);
     box-shadow:
-    0 0 0 10px   rgba(255,255,255,.2),
-    0 0 25px 2px rgba(0,0,0,.4),
-    inset 0 0 0 15px   rgba(255,255,155,.4);
+    0 0 0 10px   rgba(255,255,255,0.3),
+    0 0 25px 2px rgba(0,0,0,0.3),
+    inset 0 0 0 15px   rgba(255,255,155,0.3);
 
     -webkit-border-radius: 999px;
     -moz-border-radius: 999px;
@@ -141,13 +137,17 @@ p.intro{
     padding : 0px;
     padding-top : 50px;
     padding-bottom : 150px;
-    color: white;
+    color: #fff;
 
 }
 .presentation{
-    background-color : #34495e;
-}
+    background-color :#34495e;
 
+}
+.presentation .icone{
+    background-color : #2980b9
+;
+}
 .skills{
     color : #34495e;
 }
@@ -155,6 +155,7 @@ p.intro{
 .skills .icone{
     background-color : #42A5F5;
 }
+
 /* ----------------------------------- FOOTER ----------------------------- */
 
 #footer{
@@ -207,11 +208,32 @@ body {
     max-height: 100px;
     background: white;
 }
+.chart .magento, .chart .php, .chart .symfony, .chart .mysql, .chart .html, .chart .css, .chart .js, .chart .angular{
+    position: absolute;
+    max-width: 108px;
+    max-height: 108px;
+    top: 40px;
+    left: 40px;
+    background: white;
+}
+.chart .html, .chart .css{
+    top: 45px;
+}
+
+.chart .js{
+    top: 47px;
+    left : 51px;
+}
+
+.chart .angular{
+    left : 42px;
+
+}
 /* END Container styles */
 
 /* Colors for the circles and positions for the graphics */
 .html {
-    top: 50px;
+    top: 55px;
     left: 45px;
 }
 
@@ -228,26 +250,37 @@ body {
     stroke: #0d84ce;
 }
 
-.javascript {
+.js {
     max-width: 90px;
     max-height: 90px;
     top: 45px;
     left: 45px;
 }
 
-.javascript + svg .outer {
-    stroke: #f0e040;
+.js + svg .outer {
+    stroke: #ffd733;
 }
 
-.node {
+.angular {
     width: 200px;
     height: 200px;
     top: 45px;
     left: 45px;
 }
 
-.node + svg .outer {
-    stroke: #83cd29;
+.angular + svg .outer {
+    stroke: #dd1b16;
+}
+
+.php {
+    width: 250px;
+    height: 250px;
+    top: 45px;
+    left: 45px;
+}
+
+.php + svg .outer {
+    stroke: #6082ba;
 }
 
 .magento {
@@ -258,7 +291,7 @@ body {
  }
 
 .magento + svg .outer {
-    stroke: #ef672f;
+    stroke: #f15c22;
 }
 
 .symfony {
@@ -270,6 +303,16 @@ body {
 
 .symfony + svg .outer {
     stroke: #353436;
+}
+.mysql {
+    width: 200px;
+    height: 200px;
+    top: 45px;
+    left: 45px;
+}
+
+.mysql + svg .outer {
+    stroke: #007ba4;
 }
 
 .chart svg {
@@ -408,13 +451,13 @@ body {
 
 .pulse1 {
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     margin: auto;
-    margin-bottom: 120px;
+    margin-bottom: 110px;
 
-    top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 0;
+    top: 0; left: 3px; bottom: 0; right: 0;
+    z-index: -1;
     opacity: 0;
     border: 3px solid rgba(255,255,255,.1);
 
@@ -434,12 +477,12 @@ body {
 
 .pulse2 {
     position: absolute;
-    width: 255px;
-    height: 255px;
+    width: 225px;
+    height: 225px;
     margin: auto;
-    margin-bottom: 117px;
-    top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 0;
+    margin-bottom: 113px;
+    top: 0; left: 1px; bottom: 0; right: 0;
+    z-index: -1;
     opacity: 0;
     border: 1px solid rgba(255,255,255,0);
 
@@ -469,22 +512,22 @@ body {
     }
 
     60% {
-        -webkit-transform: scale(.9);
+        -webkit-transform: scale(.8);
         opacity: .2;
     }
 
     70% {
-        -webkit-transform: scale(1.1);
+        -webkit-transform: scale(1.0);
         opacity: .35;
     }
 
     80% {
-        -webkit-transform: scale(1.25);
+        -webkit-transform: scale(1.125);
         opacity: .2;
     }
 
     100% {
-        -webkit-transform: scale(1.4);
+        -webkit-transform: scale(1.25);
         opacity: 0;
     }
 }
@@ -501,12 +544,12 @@ body {
     }
 
     60% {
-        -moz-transform: scale(.9);
+        -moz-transform: scale(.8);
         opacity: .2;
     }
 
     70% {
-        -moz-transform: scale(1.1);
+        -moz-transform: scale(1);
         opacity: .35;
     }
 
@@ -533,7 +576,7 @@ body {
     }
 
     60% {
-        transform: scale(.9);
+        transform: scale(.8);
         opacity: .1;
     }
 
