@@ -19,7 +19,9 @@ html, body {
     padding: 0 0 60px;
 }
 /* ----------------------------------- HEADER ----------------------------- */
-
+#header{
+    margin-bottom : -2px;
+}
 .header
 {
     margin : 0;
@@ -27,6 +29,7 @@ html, body {
     /*background-image: url('images/first_background.png');*/
     width :100%;
     height : 60px;
+    position : relative;
     margin-bottom : -10px;
 }
 
@@ -36,7 +39,7 @@ html, body {
     background-image : url('../img/material-mountains-banner.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0px -400px;
+    background-position: 0px -350px;
     z-index: -1; /* Keep the background behind the content */
     height: 100%;
     width: 100%; /* Using Glen Maddern's trick /via @mente */
@@ -48,14 +51,14 @@ html, body {
     height: 20%;
     width: 100%; /* Using Glen Maddern's trick /via @mente */
     position : relative;
-    z-index: 9999;
+    z-index: 0;
     margin : 0;
     padding : 0;
 }
 
 .photo
 {
-	width : 15%;
+    width : 15%;
     margin: 0 42.5%;
     margin-top : 50px;
     position: relative;
@@ -83,6 +86,9 @@ html, body {
 h1{
     text-align : center;
     color : white;
+    font-size: 51px;
+    margin-top : 24px;
+    margin-bottom : 70px;
 }
 
 .navbar{
@@ -111,11 +117,12 @@ h1{
     text-align: center;
     float: none;
     margin: 0 auto;
-    width : 125px;
-    height : 125px;
+    width : 110px;
+    height : 110px;
     font-size: 50px;
     line-height: 1;
     border-radius : 70px;
+    margin-top: -144px;
 }
 
 p.title{
@@ -140,30 +147,39 @@ p.intro{
     color: #fff;
 
 }
+.android{
+    float :left;
+    width : 180px;
+    height : 250px;
+}
 .presentation{
-    background-color :#34495e;
+    background-color :#16a085
+;
 
 }
 .presentation .icone{
-    background-color : #2980b9
-;
+    background-color : white;
+}
+
+.glyphicon-user{
+    color : #2b2d32;
 }
 .skills{
     color : #34495e;
 }
 
 .skills .icone{
-    background-color : #42A5F5;
+    background-color : #3498db;
 }
 
 /* ----------------------------------- FOOTER ----------------------------- */
 
 #footer{
     height: 60px;
-    background-color: #d35400;
+    background-color: #c0392b;
     font-size : 25px;
     text-align : center;
-line-height: 2.50;
+    line-height: 2.50;
     color : white;
 }
 
@@ -207,6 +223,11 @@ body {
     max-width: 100px;
     max-height: 100px;
     background: white;
+}
+
+.chart p{
+    font-size : 25px;
+    margin-top : 10px;
 }
 .chart .magento, .chart .php, .chart .symfony, .chart .mysql, .chart .html, .chart .css, .chart .js, .chart .angular{
     position: absolute;
@@ -284,11 +305,11 @@ body {
 }
 
 .magento {
-     width: 200px;
-     height: 200px;
-     top: 45px;
-     left: 45px;
- }
+    width: 200px;
+    height: 200px;
+    top: 45px;
+    left: 45px;
+}
 
 .magento + svg .outer {
     stroke: #f15c22;
@@ -347,11 +368,31 @@ body {
     animation: show100 2s;
 }
 
+.chart[data-percent='90'] .outer {
+    stroke-dashoffset: 70;
+    -webkit-animation: show90 2s;
+    animation: show90 2s;
+}
+
+.chart[data-percent='85'] .outer {
+    stroke-dashoffset: 100;
+    -webkit-animation: show85 2s;
+    animation: show85 2s;
+}
+
+
 .chart[data-percent='75'] .outer {
     stroke-dashoffset: 133;
     -webkit-animation: show75 2s;
     animation: show75 2s;
 }
+
+.chart[data-percent='60'] .outer {
+    stroke-dashoffset: 200;
+    -webkit-animation: show60 2s;
+    animation: show60 2s;
+}
+
 
 .chart[data-percent='50'] .outer {
     stroke-dashoffset: 267;
@@ -359,11 +400,25 @@ body {
     animation: show50 2s;
 }
 
+.chart[data-percent='35'] .outer {
+    stroke-dashoffset: 322;
+    -webkit-animation: show35 2s;
+    animation: show35 2s;
+}
+
+
 .chart[data-percent='25'] .outer {
     stroke-dashoffset: 401;
     -webkit-animation: show25 2s;
     animation: show25 2s;
 }
+.chart[data-percent='10'] .outer {
+    stroke-dashoffset: 450;
+    -webkit-animation: show10 2s;
+    animation: show10 2s;
+}
+
+
 /* END set initial animation values */
 
 /* Keyframes for the initial animation */
@@ -451,10 +506,10 @@ body {
 
 .pulse1 {
     position: absolute;
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
     margin: auto;
-    margin-bottom: 110px;
+    margin-bottom: 150px;
 
     top: 0; left: 3px; bottom: 0; right: 0;
     z-index: -1;
@@ -477,10 +532,10 @@ body {
 
 .pulse2 {
     position: absolute;
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
     margin: auto;
-    margin-bottom: 113px;
+    margin-bottom: 152px;
     top: 0; left: 1px; bottom: 0; right: 0;
     z-index: -1;
     opacity: 0;
