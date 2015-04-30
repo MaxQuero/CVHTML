@@ -172,6 +172,12 @@ p.intro{
     background-color : #3498db;
 }
 
+.cursus{
+    float: none;
+    color : #34495e;
+    background-color :#16a085;
+}
+
 /* ----------------------------------- FOOTER ----------------------------- */
 
 #footer{
