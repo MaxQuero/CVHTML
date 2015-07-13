@@ -53,6 +53,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
     toString = {}.toString,
 
+    // TODO :: make the prefixes more granular
     /*>>prefixes*/
     // List of property values to set for css tests. See ticket #21
     prefixes = ' -webkit- -moz- -o- -ms- '.split(' '),
@@ -125,7 +126,11 @@ window.Modernizr = (function( window, document, undefined ) {
       fakeBody.appendChild(div);
       if ( !body ) {
           //avoid crashing IE8, if background image is used
-
+          fakeBody.style.background = '';
+          //Safari 5.13/5.1.4 OSX stops loading if ::-webkit-scrollbar is used and scrollbars are visible
+          fakeBody.style.overflow = 'hidden';
+          docOverflow = docElement.style.overflow;
+          docElement.style.overflow = 'hidden';
           docElement.appendChild(fakeBody);
       }
 
@@ -133,6 +138,7 @@ window.Modernizr = (function( window, document, undefined ) {
       // If this is done after page load we don't want to remove the body so check if body exists
       if ( !body ) {
           fakeBody.parentNode.removeChild(fakeBody);
+          docElement.style.overflow = docOverflow;
       } else {
           div.parentNode.removeChild(div);
       }
@@ -155,7 +161,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
       var bool;
 
-      injectElementWithStyles('@media ' + mq + ' { #' + mod + ' { } }', function( node ) {
+      injectElementWithStyles('@media ' + mq + ' { #' + mod + ' { position: absolute; } }', function( node ) {
         bool = (window.getComputedStyle ?
                   getComputedStyle(node, null) :
                   node.currentStyle)['position'] == 'absolute';
@@ -216,6 +222,7 @@ window.Modernizr = (function( window, document, undefined ) {
     })(),
     /*>>hasevent*/
 
+    // TODO :: Add flag for hasownprop ? didn't last time
 
     // hasOwnProperty shim by kangax needed for Safari 2.0 support
     _hasOwnProperty = ({}).hasOwnProperty, hasOwnProp;
@@ -335,6 +342,7 @@ window.Modernizr = (function( window, document, undefined ) {
     }
     /*>>testprop*/
 
+    // TODO :: add testDOMProps
     /**
      * testDOMProps is a generic DOM property test; if a browser supports
      *   a certain property, it won't return undefined for it.
@@ -622,6 +630,7 @@ window.Modernizr = (function( window, document, undefined ) {
             str3 = 'linear-gradient(left top,#9f9, white);';
 
         setCss(
+             // legacy webkit syntax (FIXME: remove when syntax not in use anymore)
               (str1 + '-webkit- '.split(' ').join(str2 + str1) +
              // standard syntax             // trailing 'background-image:'
               prefixes.join(str3 + str1)).slice(0, -str1.length)
@@ -930,6 +939,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
 
     // Run through all tests and detect their support in the current UA.
+    // todo: hypothetically we could be doing an array of tests and use a basic loop here.
     for ( var feature in tests ) {
         if ( hasOwnProp(tests, feature) ) {
             // run the test, throw the return value into the Modernizr,
@@ -1388,7 +1398,7 @@ window.Modernizr = (function( window, document, undefined ) {
     docElement.className = docElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2') +
 
                             // Add the new classes to the <html> element.
-                            (enableClasses ? 'javascript' + classes.join(' ') : '');
+                            (enableClasses ? ' js ' + classes.join(' ') : '');
     /*>>cssclasses*/
 
     return Modernizr;
