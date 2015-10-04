@@ -157,7 +157,7 @@ p.intro{
 
 .cursus{
     color : #34495e;
-    background-color : #d8be3d;
+    background-color : #009688;
     padding-top : 50px;
 
 }
@@ -335,6 +335,20 @@ body {
 .mysql + svg .outer {
     stroke: #007ba4;
 }
+
+
+
+/* Timeline */
+
+
+
+
+
+
+
+
+
+/* Chart */
 
 .chart svg {
     position: absolute;
