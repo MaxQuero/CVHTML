@@ -134,7 +134,10 @@ html .workGrid a:hover figure button {
 	transform: translateY(-50%) translateX(-50%) scale(1);
 }
 
-
+.workGrid a:hover figcaption{
+	background-color : white;
+	opacity: 0.2;
+}
 /* Media Queries */
 /* Let's redefine the width of each anchor and the margins */
 
