@@ -148,7 +148,7 @@ p.intro{
 }
 .skills{
     color : #34495e;
-
+    background-color : #fff;
 }
 
 .skills .icone{
@@ -157,7 +157,7 @@ p.intro{
 
 .cursus{
     color : #34495e;
-    background-color : #009688;
+    background-color : #d3ca00;
     padding-top : 50px;
 
 }
@@ -339,7 +339,6 @@ body {
 
 
 /* Timeline */
-
 
 
 
