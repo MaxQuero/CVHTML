@@ -12,6 +12,7 @@
 .grid {
 
 	position : relative;
+	display : block;
 	margin: 0 auto;
 	padding: 1em 0 4em;
 	list-style: none;
@@ -21,22 +22,21 @@
 /* Common style */
 .grid figure {
 	position: relative;
-	float: left;
+	display : inline-block;
 	overflow: hidden;
 	margin: 10px 1%;
-	width : 280px;
-	height : 170px;
+	width : 400px;
+	height : 200px;
 	background: #3085a3;
 	text-align: center;
-	cursor: pointer;
 }
 
 .grid figure img {
 	position: relative;
 	display: block;
-	width: 280px;
-	height : 200px;
 	opacity: 0.7;
+	width : 400px;
+	height : 200px;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
@@ -76,11 +76,11 @@
 
 .grid figure h2 {
 	word-spacing: -0.15em;
-	font-weight: 300;
+	font-weight: 200;
 }
 
 .grid figure h2 span {
-	font-weight: 800;
+	font-weight: 600;
 }
 
 .grid figure h2,
@@ -141,7 +141,7 @@ figure.effect-layla figcaption::after {
 }
 
 figure.effect-layla h2 {
-	padding-top: 26%;
+	padding-top: 12%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
@@ -157,7 +157,7 @@ figure.effect-layla p {
 figure.effect-layla img,
 figure.effect-layla h2 {
 	-webkit-transform: translate3d(0,-30px,0);
-	transform: translate3d(0,-30px,0);
+	transform: translate3d(0,0,0);
 }
 
 figure.effect-layla img,
@@ -171,7 +171,7 @@ figure.effect-layla p {
 figure.effect-layla:hover img {
 	opacity: 0.7;
 	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	transform: translate3d(0,30px,0);
 }
 
 figure.effect-layla:hover figcaption::before,

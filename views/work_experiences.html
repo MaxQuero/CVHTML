@@ -1,4 +1,4 @@
-<div class="work_experiences bloc col-xs-12 col-md-12">
+<div class="personal_projects bloc col-xs-12 col-md-12">
 
     <div class="title col-md-6 col-xs-6">
         <button class="icone btn btn-primary btn-lg col-md-12">
@@ -6,20 +6,35 @@
         </button>
         <p class=" title col-md-12 col-xs-12"> My Work Experiences </p>
 
-        <section id="workGrid" class="workGrid clearfix">
-            <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                <figure>
-                    <img src="public/img/work_experiences/topoffice.png" />
-                    <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                    <figcaption>
-                        <h2>Crystalline</h2>
-                        <p>Soko radicchio bunya nuts gram dulse.</p>
-                        <button>View</button>
-                    </figcaption>
-                </figure>
-            </a>
-            </section>
+
         <div class="grid">
+
+            <figure class="effect-layla">
+                <img src="public/img/work_experiences/cgi.png" />
+                <figcaption>
+                    <h2>Crazy <span>Layla</span></h2>
+                    <p>When Layla appears, she brings an eternal summer along.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-layla">
+                <img src="public/img/work_experiences/topoffice.png" />
+                <figcaption>
+                    <h2>Crazy <span>Layla</span></h2>
+                    <p>When Layla appears, she brings an eternal summer along.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+
+            <figure class="effect-layla">
+                <img src="public/img/work_experiences/topoffice.png" />
+                <figcaption>
+                    <h2>Crazy <span>Layla</span></h2>
+                    <p>When Layla appears, she brings an eternal summer along.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+
             <figure class="effect-layla">
                 <img src="public/img/work_experiences/topoffice.png" />
                 <figcaption>
@@ -29,34 +44,6 @@
                 </figcaption>
             </figure>
         </div>
-        <script>
-            (function() {
-
-                function init() {
-                    var speed = 250,
-                            easing = mina.easeinout;
-
-                    [].slice.call ( document.querySelectorAll( '#workGrid > a' ) ).forEach( function( el ) {
-                        var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
-                                pathConfig = {
-                                    from : path.attr( 'd' ),
-                                    to : el.getAttribute( 'data-path-hover' )
-                                };
-
-                        el.addEventListener( 'mouseenter', function() {
-                            path.animate( { 'path' : pathConfig.to }, speed, easing );
-                        } );
-
-                        el.addEventListener( 'mouseleave', function() {
-                            path.animate( { 'path' : pathConfig.from }, speed, easing );
-                        } );
-                    } );
-                }
-
-                init();
-
-            })();
-        </script>
 
     </div>
 
