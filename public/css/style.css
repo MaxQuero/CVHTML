@@ -24,7 +24,7 @@ header{
     content: "";
     width :100%;
     height: auto;
-    background-image : url('../img/material-mountains-banner.png');
+    background-image : url('../img/header/material-mountains-banner.png');
     background-repeat: no-repeat;
     background-size: 100% 200%;
     background-position: 0px -250px;
@@ -157,7 +157,7 @@ p.intro{
 
 .cursus{
     color : #34495e;
-    background-color : #d3ca00;
+    background-color : #e67e22;
     padding-top : 50px;
 
 }
