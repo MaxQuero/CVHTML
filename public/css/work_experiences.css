@@ -29,6 +29,7 @@
 	width : 400px;
 	height : 200px;
 	background: #3085a3;
+	background-color : white;
 	text-align: center;
 }
 
@@ -47,11 +48,12 @@ figcaption {
 }
 
 .grid figure figcaption {
-	color: #fff;
+	color: white;
 	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+
 }
 
 .grid figure figcaption::before,
@@ -106,7 +108,8 @@ figcaption {
 /*---------------*/
 
 figure.effect-layla {
-	background: #18a367;
+	background: rgba(55, 39, 163, 0);
+	background-color :white;
 }
 
 
@@ -186,7 +189,7 @@ figure.effect-layla:hover figcaption::after {
 	transform: scale(1);
 }
 figure.effect-layla:hover figcaption::after {
-	color : green;
+	color : white;
 }
 
 figure.effect-layla:hover h2,
