@@ -345,15 +345,6 @@ body {
 
 
 
-/* Timeline */
-
-
-
-
-
-
-
-
 /* Chart */
 
 .chart svg {
@@ -438,6 +429,12 @@ body {
     animation: show10 2s;
 }
 
+.chart[data-percent='5'] .outer {
+    stroke-dashoffset: 500;
+    -webkit-animation: show5 2s;
+    animation: show5 2s;
+}
+
 
 /* END set initial animation values */
 
@@ -462,7 +459,7 @@ body {
     }
 }
 
-@-webkit-keyframes show75 {
+@-webkit-keyframes show85 {
     from {
         stroke-dashoffset: 537;
     }
@@ -512,14 +509,25 @@ body {
     }
 }
 
-@keyframes show25 {
+@keyframes show10 {
     from {
         stroke-dashoffset: 537;
     }
 
     to {
-        stroke-dashoffset: 401;
+        stroke-dashoffset: 460;
     }
 }
+
+@keyframes show5 {
+    from {
+        stroke-dashoffset: 537;
+    }
+
+    to {
+        stroke-dashoffset: 500;
+    }
+}
+
 /* END Keyframes for the initial animation */
 
