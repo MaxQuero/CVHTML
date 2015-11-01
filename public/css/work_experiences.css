@@ -41,7 +41,7 @@ figcaption {
 	position: relative;
 	display: block;
 	opacity: 0.7;
-	width : 400px;
+	width :400px;
 	height : 200px;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
@@ -109,7 +109,10 @@ figcaption {
 
 figure.effect-layla {
 	background: rgba(55, 39, 163, 0);
-	background-color :white;
+	border: solid;
+	border-radius: 15px;
+	border-color : transparent;
+
 }
 
 
@@ -164,8 +167,15 @@ figure.effect-layla p {
 
 figure.effect-layla img,
 figure.effect-layla h2 {
-	-webkit-transform: translate3d(0,-30px,0);
+
+	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+}
+
+figure.effect-layla h2{
+	opacity :0;
+	-webkit-transform: translate3d(0,-10px,0);
+	transform: translate3d(0,-10px,0);
 }
 
 figure.effect-layla img,
@@ -177,9 +187,25 @@ figure.effect-layla p {
 }
 
 figure.effect-layla:hover img {
-	opacity: 0;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,30px,0);
+}
+figure.effect-layla:hover figcaption{
+	border: solid;
+	border-radius: 15px;
+
+	border-color : white;
+	box-shadow: 10px 10px 10px black;
+	background-image : linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 75%, rgba(0, 0, 0, 0.8) 100%);
+
+}
+
+figure.effect-layla:hover{
+	border: solid 0px;
+	border-radius: 15px;
+
+	border-color : transparent;
+	box-shadow: 5px 5px 10px black;
 }
 
 figure.effect-layla:hover figcaption::before,
@@ -187,6 +213,7 @@ figure.effect-layla:hover figcaption::after {
 	opacity: 0;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+
 }
 figure.effect-layla:hover figcaption::after {
 	color : white;
@@ -204,6 +231,5 @@ figure.effect-layla:hover figcaption::after,
 figure.effect-layla:hover h2,
 figure.effect-layla:hover p,
 figure.effect-layla:hover img {
-	-webkit-transition-delay: 0.15s;
-	transition-delay: 0.15s;
+
 }
