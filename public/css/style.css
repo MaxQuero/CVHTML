@@ -155,7 +155,7 @@ p.intro{
 
 .cursus{
     color : #34495e;
-    background-color : #e67e22;
+    background-color : #2980b9;
     padding-top : 50px;
 
 }
@@ -170,17 +170,18 @@ p.intro{
 }
 
 .personal_projects {
-    background-color : #2d70b0;
+    background-color : #27ae60;
 }
 /* ----------------------------------- FOOTER ----------------------------- */
 
 #footer{
-    height: 60px;
     background-color: #c0392b;
     font-size : 25px;
     text-align : center;
     line-height: 2.50;
     color : white;
+    margin: 0;
+    padding : 0;
 }
 
 
