@@ -18,8 +18,9 @@ Modules - reusable parts of our design
 
 #cd-timeline {
   position: relative;
-
+  margin-bottom : 50px;
 }
+
 #cd-timeline::before {
   /* this is the vertical line */
   content: '';
@@ -80,9 +81,36 @@ Modules - reusable parts of our design
   position: relative;
   left: -5%;
   top: -5%;
-
 }
-.cd-timeline-img.cd-book {
+
+@media screen and (max-width: 1280px) {
+
+  h2{
+    font-size : 20px;
+  }
+
+  p.intro-title{
+    font-size : 30px;
+
+  }
+
+  p.intro{
+    font-size : 20px;
+    margin-bottom : 20px;
+  }
+  .cd-timeline-img .glyphicon {
+    display: block;
+    width: 120px;
+    font-size : 24px;
+    height: 24px;
+    position: relative;
+    left: -5%;
+    top: -5%;
+    margin : -6px -9px;
+
+  }
+}
+  .cd-timeline-img.cd-book {
   background: #00bcd4;
 }
 .cd-timeline-img.cd-education {
