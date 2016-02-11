@@ -17,6 +17,7 @@ html, body {
     margin: 0 auto -60px;
     /* Pad bottom by footer height */
     padding: 0 0 60px;
+
 }
 /* ----------------------------------- HEADER ----------------------------- */
 header{
@@ -37,6 +38,7 @@ header{
     padding-bottom: 93px;
     margin: -1px;
     border-bottom: 1px solid #eee;
+    display : inline-block;
 }
 
 .photo
@@ -64,6 +66,20 @@ header{
 
 }
 
+
+.android{
+    float :right;
+    width : 10%;
+    height : 10%;
+    margin-right : 50px;
+    margin-top : -130px;
+}
+
+
+.presentation .content{
+    margin-top : -80px;
+}
+
 h1{
     text-align : center;
     color : white;
@@ -82,11 +98,6 @@ h1{
 
 }
 
-/* ----------------------------------- HOMEPAGE ----------------------------- */
-
-html{
-    background-image : url('../img/h')
-}
 
 /* ----------------------------------- INDEX ----------------------------- */
 
@@ -118,10 +129,11 @@ p.title{
     font-size : 50px;
 }
 p.intro-title{
-    font-size : 60px;
+    font-size : 40px;
 }
 p.intro{
-    font-size : 40px;
+    font-size : 20px;
+    margin-bottom : 40px;
 }
 .mainbloc{
     margin :0;
@@ -135,11 +147,7 @@ p.intro{
     color: #fff;
 
 }
-.android{
-    float :left;
-    width : 180px;
-    height : 250px;
-}
+
 .presentation{
     background-color : #c33f3e;
 
@@ -156,11 +164,12 @@ p.intro{
     color : #34495e;
     background-color : #2980b9;
     padding-top : 50px;
-
 }
 
 .cursus .title {
-    padding-bottom : 20px;
+    padding-bottom : 10px;
+    color : #fff;
+
 }
 
 .cursus .icone{
@@ -168,9 +177,14 @@ p.intro{
     color : #74d336;
 }
 
-.personal_projects {
+.work-experiences{
     background-color : #27ae60;
 }
+
+.work-experiences .icone{
+    background-color : #fff;
+}
+
 /* ----------------------------------- FOOTER ----------------------------- */
 
 #footer{
@@ -183,7 +197,14 @@ p.intro{
     padding : 0;
 }
 
-
+#footer span{
+    font-size : 15px;
+}
+#kenavo{
+    padding-top : 20px;
+    font-size: 40px;
+    margin-bottom : 20px;
+}
 
 /* Import the Google Font 'Lato' */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
@@ -201,15 +222,34 @@ body {
 
 @media screen and (max-width: 1280px) {
 
-    p.title{
-        font-size : 35px;
+    h2{
+        font-size : 20px;
     }
+
+    h3{
+        font-size : 12px;
+
+    }
+    p.title{
+        font-size : 50px;
+    }
+
+    p.intro-title{
+        font-size : 20px;
+
+    }
+
+    p.intro{
+        font-size : 10px;
+        margin-bottom : 40px;
+    }
+
+
     /* Header Photo*/
     .photo{
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width : 150px;
+        margin : 0 auto;
+        width : 250px;
         margin-top : 50px;
         position: relative;
         -webkit-box-shadow:
@@ -228,9 +268,48 @@ body {
         -moz-border-radius: 999px;
         border-radius: 999px;
         /* border-radius: 50% has issues on some mobile browsers */
+        margin-bottom : 30px;
     }
 
+    .android{
+        float :right;
+        width : 20%;
+        height : 20%;
+        margin-right : 50px;
+        margin-top : -130px;
+    }
+
+
+    .presentation .content{
+        margin-top : -100px;
+    }
+
+    .impair {
+        position: relative;
+        display: inline-block;
+        color: #999;
+        font-size: 20px;
+        text-align: center;
+        margin-right : 140px !important;
+    }
+
+    #kenavo{
+        padding-top : 20px;
+        font-size: 20px;
+    }
+
+    .footer span{
+        font-size : 20px;
+    }
+
+    .footer{
+        position: relative;
+        margin-top: -150px; /* negative value of footer height */
+        height: 150px;
+        clear:both;
+        padding-top:20px;
+    }
+
+
 }
-
-
 

@@ -9,6 +9,19 @@
 		url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
 }
 
+.work-experiences .impair {
+	position: relative;
+	display: inline-block;
+	color: #999;
+	font-size: 20px;
+	text-align: center;
+	margin-right : 180px !important;
+}
+
+
+.work-experiences .glyphicon{
+	color : #34495e;
+}
 .grid {
 
 	position : relative;
@@ -25,7 +38,6 @@
 	display : inline-block;
 	overflow: hidden;
 	margin: 10px 0;
-	margin-left : 2%;
 	width : 400px;
 	height : 200px;
 	background: #3085a3;
@@ -64,11 +76,10 @@ figcaption {
 .grid figure figcaption,
 .grid figure figcaption > a {
 	position: absolute;
-	margin : -25px;
 	top: 0;
 	left: 0;
-	width: 450px;
-	height: 250px;
+	width: 401px;
+	height: 201px;
 
 }
 
@@ -152,7 +163,7 @@ figure.effect-layla figcaption::after {
 }
 
 figure.effect-layla h2 {
-	padding-top: 12%;
+	padding-top: 7%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
@@ -190,16 +201,24 @@ figure.effect-layla:hover img {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,30px,0);
 }
+
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after,figcaption{
+
+}
+
 figure.effect-layla:hover figcaption{
 	background-image : linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 75%, rgba(0, 0, 0, 0.8) 100%);
+	border: solid 1px;
+	border-radius : 15px;
+	border-color : transparent;
 }
+
 
 figure.effect-layla:hover{
 	box-shadow: 5px 5px 10px black;
-
 	border: solid 0px;
 	border-radius: 15px;
-
 	border-color : transparent;
 
 }
@@ -226,6 +245,7 @@ figure.effect-layla:hover p {
 /* media queries */
 
 @media screen and (max-width: 1280px){
+
 	.grid {
 
 		position : relative;
@@ -242,7 +262,6 @@ figure.effect-layla:hover p {
 		display : inline-block;
 		overflow: hidden;
 		margin: 10px 0;
-		margin-left : 2%;
 		width : 300px;
 		height : 200px;
 		background: #3085a3;
@@ -281,14 +300,14 @@ figure.effect-layla:hover p {
 		pointer-events: none;
 	}
 
+
 	.grid figure figcaption,
 	.grid figure figcaption > a {
 		position: absolute;
-		margin : -25px;
 		top: 0;
 		left: 0;
-		width: auto;
-		height: 250px;
+		width: 301px;
+		height: 201px;
 
 	}
 
@@ -369,7 +388,6 @@ figure.effect-layla:hover p {
 	}
 
 	figure.effect-layla h2 {
-		padding-top: 20%;
 		-webkit-transition: -webkit-transform 0.35s;
 		transition: transform 0.35s;
 		margin-bottom : 10px;

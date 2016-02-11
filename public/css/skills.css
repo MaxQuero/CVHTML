@@ -18,6 +18,8 @@
     margin : 25px;
 }
 
+
+
 .chart figcaption {
     padding: 50px 25px;
     width: 194px;
@@ -46,8 +48,13 @@
     left: 40px;
     background: white;
 }
-.chart .html, .chart .css{
+.chart .css{
     top: 45px;
+}
+
+.chart .html{
+    top : 45px;
+    left: 47px;
 }
 
 .chart .js{
