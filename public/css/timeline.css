@@ -243,9 +243,7 @@ Modules - reusable parts of our design
   border-right: 7px solid white;
 }
 
-.impair-checkpoint{
-  float : right;
-}
+
 
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
@@ -313,6 +311,35 @@ Modules - reusable parts of our design
   }
 }
 
+.impair-checkpoint {
+  float: right;
+}
+
+@media screen and (max-width: 1280px) {
+  .impair-checkpoint {
+    float: none;
+  }
+  .cd-timeline-content span{
+    color : black;
+  }
+
+  .cd-timeline-content {
+    position: relative;
+    margin-left: 60px;
+    background: white;
+    width :90%;
+    border-radius: 0.25em;
+    padding: 20px 10px;
+    box-shadow: 0 3px 0 #d7e4ed;
+  }
+
+  .cd-container {
+    /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+    margin: 0 auto;
+    margin-left : 20px;
+  }
+
+}
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
   .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
