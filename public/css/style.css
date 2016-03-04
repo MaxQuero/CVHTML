@@ -2,6 +2,8 @@
 @font-face {
     font-family: "Ma Super Fonte";
     src: url('../fonts/FORTE.TTF');
+    font-family: "Century_G";
+    src : url(../fonts/century/GOTHIC.TTF)
 }
 
 html, body {
@@ -80,10 +82,14 @@ header{
     margin-top : -80px;
 }
 
-h1, h2, p {
+h1, p {
     color: white;
     font-family: 'Roboto', sans-serif;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
 }
 
 h1{
@@ -91,7 +97,7 @@ h1{
     color : white;
     font-size: 51px;
     padding : 0;
-    font-family : 'Roboto', sans-serif;
+    font-family : 'Century_G', sans-serif;
 }
 
 .navbar{
