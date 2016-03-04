@@ -4,7 +4,9 @@
     color : #34495e;
     background-color : #fff;
 }
-
+.skills p{
+    color : black;
+}
 .skills .icone{
     background-color : #3498db;
 }

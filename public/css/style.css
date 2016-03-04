@@ -17,8 +17,8 @@ html, body {
     margin: 0 auto -60px;
     /* Pad bottom by footer height */
     padding: 0 0 60px;
-
 }
+
 /* ----------------------------------- HEADER ----------------------------- */
 header{
     margin-bottom : -2px;
@@ -80,11 +80,16 @@ header{
     margin-top : -80px;
 }
 
+h1, h2, p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 h1{
     text-align : center;
     color : white;
     font-size: 51px;
-    margin : 0;
     padding : 0;
     font-family : 'Roboto', sans-serif;
 }
