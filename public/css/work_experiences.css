@@ -12,6 +12,10 @@
 .work-experiences .glyphicon{
 	color : #34495e;
 }
+
+.line{
+	width : 100%;
+}
 .grid {
 
 	position : relative;
@@ -230,27 +234,21 @@ figure.effect-layla:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
-@media screen and (min-width: 1280px) {
-	.work-experiences .effect-layla{
+
+@media screen and (min-width: 1281px) {
+
+	.impair {
 		position: relative;
 		display: inline-block;
 		color: #999;
 		font-size: 20px;
 		text-align: center;
+		margin-right : 10% !important;
 	}
 }
-
 /* media queries */
 
 @media screen and (max-width: 1280px){
-	.work-experiences .effect-layla {
-		position: relative;
-		display: inline-block;
-		color: #999;
-		font-size: 20px;
-		text-align: center;
-		margin-right : 110px !important;
-	}
 
 	.grid {
 
