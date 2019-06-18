@@ -9,21 +9,51 @@
 		url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
 }
 
-.work-experiences .glyphicon{
-	color : #34495e;
+.work-experiences{
+  background-color : #27ae60;
 }
 
-.line{
-	width : 100%;
+
+.work-experiences .icone{
+  background-color : #fff;
+}
+
+
+.work-experiences .impair {
+	position: relative;
+	display: inline-block;
+	color: #999;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+.work-experiences .work-experience-img{
+  margin: auto;
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+}
+
+.work-experiences .glyphicon{
+	color : #34495e;
 }
 .grid {
 
 	position : relative;
-	display : block;
+	display : flex;
+  flex-wrap: wrap;
+  justify-content: center;
 	margin: 0 auto;
 	padding: 1em 200px 4em;
 	list-style: none;
 	text-align: center;
+}
+
+.grid-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* Common style */
@@ -31,8 +61,6 @@
 	position: relative;
 	display : inline-block;
 	overflow: hidden;
-	margin: 10px 0;
-	width : 400px;
 	height : 200px;
 	background: #3085a3;
 	background-color : white;
@@ -72,9 +100,8 @@ figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 401px;
+  width: 100%;
 	height: 201px;
-
 }
 
 /* Anchor will cover the whole item by default */
@@ -117,6 +144,7 @@ figure.effect-layla {
 	border: solid;
 	border-radius: 15px;
 	border-color : transparent;
+  margin-bottom: 2rem;
 
 }
 
@@ -163,7 +191,6 @@ figure.effect-layla h2 {
 }
 
 figure.effect-layla p {
-	padding: 0.5em 2em;
 	text-transform: none;
 	opacity: 0;
 	-webkit-transform: translate3d(0,-10px,0);
@@ -204,7 +231,7 @@ figure.effect-layla figcaption::after,figcaption{
 figure.effect-layla:hover figcaption{
 	background-image : linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 75%, rgba(0, 0, 0, 0.8) 100%);
 	border: solid 1px;
-	border-radius : 15px;
+	border-radius : 5px;
 	border-color : transparent;
 }
 
@@ -212,7 +239,7 @@ figure.effect-layla:hover figcaption{
 figure.effect-layla:hover{
 	box-shadow: 5px 5px 10px black;
 	border: solid 0px;
-	border-radius: 15px;
+	border-radius: 5px;
 	border-color : transparent;
 
 }
@@ -235,17 +262,7 @@ figure.effect-layla:hover p {
 	transform: translate3d(0,0,0);
 }
 
-@media screen and (min-width: 1281px) {
 
-	.impair {
-		position: relative;
-		display: inline-block;
-		color: #999;
-		font-size: 20px;
-		text-align: center;
-		margin-right : 10% !important;
-	}
-}
 /* media queries */
 
 @media screen and (max-width: 1280px){
@@ -266,7 +283,6 @@ figure.effect-layla:hover p {
 		display : inline-block;
 		overflow: hidden;
 		margin: 10px 0;
-		width : 300px;
 		height : 200px;
 		background: #3085a3;
 		background-color : white;
@@ -310,7 +326,6 @@ figure.effect-layla:hover p {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 301px;
 		height: 201px;
 
 	}
@@ -351,7 +366,7 @@ figure.effect-layla:hover p {
 	/*---------------*/
 	figure.effect-layla {
 		background: rgba(55, 39, 163, 0);
-		border: solid;
+		border: 1px solid;
 		border-radius: 15px;
 		border-color : transparent;
 	}
@@ -461,7 +476,6 @@ figure.effect-layla:hover p {
 		-webkit-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 	}
-
 
 }
 

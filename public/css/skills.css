@@ -58,7 +58,6 @@
 .chart .html{
     top : 45px;
     left: 42px;
-    left: 42px;
 }
 
 .chart .js{
@@ -191,155 +190,10 @@
     animation: show100 2s;
 }
 
-.chart[data-percent='90'] .outer {
-    stroke-dashoffset: 70;
-    -webkit-animation: show90 2s;
-    animation: show90 2s;
-}
-
-.chart[data-percent='85'] .outer {
-    stroke-dashoffset: 100;
-    -webkit-animation: show85 2s;
-    animation: show85 2s;
-}
-
-
-.chart[data-percent='75'] .outer {
-    stroke-dashoffset: 133;
-    -webkit-animation: show75 2s;
-    animation: show75 2s;
-}
-
-.chart[data-percent='60'] .outer {
-    stroke-dashoffset: 200;
-    -webkit-animation: show60 2s;
-    animation: show60 2s;
-}
-
-
-.chart[data-percent='50'] .outer {
-    stroke-dashoffset: 267;
-    -webkit-animation: show50 2s;
-    animation: show50 2s;
-}
-
-.chart[data-percent='35'] .outer {
-    stroke-dashoffset: 322;
-    -webkit-animation: show35 2s;
-    animation: show35 2s;
-}
-
-
-.chart[data-percent='25'] .outer {
-    stroke-dashoffset: 401;
-    -webkit-animation: show25 2s;
-    animation: show25 2s;
-}
-.chart[data-percent='10'] .outer {
-    stroke-dashoffset: 450;
-    -webkit-animation: show10 2s;
-    animation: show10 2s;
-}
-
-.chart[data-percent='5'] .outer {
-    stroke-dashoffset: 500;
-    -webkit-animation: show5 2s;
-    animation: show5 2s;
-}
 
 
 /* END set initial animation values */
 
-/* Keyframes for the initial animation */
-@-webkit-keyframes show100 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes show100 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@-webkit-keyframes show85 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 134;
-    }
-}
-
-@keyframes show75 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 124;
-    }
-}
-
-@-webkit-keyframes show50 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 267;
-    }
-}
-
-@keyframes show50 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 267;
-    }
-}
-
-@-webkit-keyframes show25 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 401;
-    }
-}
-
-@keyframes show10 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 460;
-    }
-}
-
-@keyframes show5 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 500;
-    }
-}
 
 /* END Keyframes for the initial animation */
 
