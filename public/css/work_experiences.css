@@ -10,18 +10,12 @@
 }
 
 .work-experiences{
-  background-color : #27ae60;
+
+  background-color : #F5F5F5;
 }
-
-
-.work-experiences .icone{
-  background-color : #fff;
-}
-
 
 .work-experiences .impair {
 	position: relative;
-	display: inline-block;
 	color: #999;
 	font-size: 20px;
 	text-align: center;
@@ -35,9 +29,14 @@
   height: 100%;
 }
 
-.work-experiences .glyphicon{
-	color : #34495e;
+
+.work-experiences .work-experience-img.cgi, .work-experience-img.cerise{
+    margin: auto;
+    width: 100%;
+    height: auto;
 }
+
+
 .grid {
 
 	position : relative;
@@ -59,7 +58,6 @@
 /* Common style */
 .grid figure {
 	position: relative;
-	display : inline-block;
 	overflow: hidden;
 	height : 200px;
 	background: #3085a3;
@@ -68,7 +66,6 @@
 }
 
 figcaption {
-	display: inline-block;
 	float : left;
 }
 .grid figure img {
@@ -82,11 +79,17 @@ figcaption {
 }
 
 .grid figure figcaption {
-	color: white;
-	text-transform: uppercase;
-	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: .5rem;
 
 }
 
@@ -126,6 +129,7 @@ figcaption {
 .grid figure h2,
 .grid figure p {
 	margin: 0;
+    color: white;
 }
 
 .grid figure p {
@@ -140,6 +144,10 @@ figcaption {
 /*---------------*/
 
 figure.effect-layla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 	background: rgba(55, 39, 163, 0);
 	border: solid;
 	border-radius: 15px;
@@ -195,6 +203,7 @@ figure.effect-layla p {
 	opacity: 0;
 	-webkit-transform: translate3d(0,-10px,0);
 	transform: translate3d(0,-10px,0);
+    font-size: 14px;
 }
 
 figure.effect-layla img,
@@ -280,7 +289,6 @@ figure.effect-layla:hover p {
 	/* Common style */
 	.grid figure {
 		position: relative;
-		display : inline-block;
 		overflow: hidden;
 		margin: 10px 0;
 		height : 200px;
@@ -303,7 +311,6 @@ figure.effect-layla:hover p {
 
 
 	figcaption {
-		display: inline-block;
 		float : left;
 	}
 

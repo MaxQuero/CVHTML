@@ -2,13 +2,10 @@
 
 .skills{
     color : #34495e;
-    background-color : #fff;
+    background-color : white;
 }
 .skills p{
     color : black;
-}
-.skills .icone{
-    background-color : #3498db;
 }
 
 .chart {
@@ -42,12 +39,11 @@
     font-size : 25px;
     margin-top : 10px;
 }
-.chart .magento, .chart .php, .chart .symfony, .chart .mysql, .chart .html, .chart .css, .chart .js, .chart .angular{
+.chart .drupal, .chart .php, .chart .symfony, .chart .mysql, .chart .html, .chart .css, .chart .js, .chart .angular{
     position: absolute;
-    max-width: 108px;
     max-height: 108px;
     top: 42px;
-    left: 41px;
+    left: 45px;
     background: white;
 }
 
@@ -57,7 +53,7 @@
 
 .chart .html{
     top : 45px;
-    left: 42px;
+    left: 46px;
 }
 
 .chart .js{
@@ -66,7 +62,7 @@
 }
 
 .chart .angular{
-    left : 42px;
+    left : 46px;
 
 }
 /* END Container styles */
@@ -74,7 +70,7 @@
 /* Colors for the circles and positions for the graphics */
 .html {
     top: 55px;
-    left: 45px;
+    left: 47px;
 }
 
 .html + svg .outer {
@@ -122,15 +118,15 @@
     stroke: #6082ba;
 }
 
-.magento {
+.drupal {
     width: 200px;
     height: 200px;
   top: 43px;
   left: 41px;
 }
 
-.magento + svg .outer {
-    stroke: #f15c22;
+.drupal + svg .outer {
+    stroke: #28a9e0;
 }
 
 .symfony {
