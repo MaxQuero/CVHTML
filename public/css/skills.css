@@ -46,8 +46,8 @@
     position: absolute;
     max-width: 108px;
     max-height: 108px;
-    top: 40px;
-    left: 40px;
+    top: 42px;
+    left: 41px;
     background: white;
 }
 
@@ -92,8 +92,8 @@
 
 .js {
     max-height: 90px;
-    top: 45px;
-    left: 45px;
+  top: 43px;
+  left: 41px;
 }
 
 .js + svg .outer {
@@ -103,8 +103,8 @@
 .angular {
     width: 200px;
     height: 200px;
-    top: 45px;
-    left: 45px;
+  top: 43px;
+  left: 41px;
 }
 
 .angular + svg .outer {
@@ -114,8 +114,8 @@
 .php {
     width: 250px;
     height: 250px;
-    top: 45px;
-    left: 45px;
+  top: 43px;
+  left: 41px;
 }
 
 .php + svg .outer {
@@ -125,8 +125,8 @@
 .magento {
     width: 200px;
     height: 200px;
-    top: 45px;
-    left: 45px;
+  top: 43px;
+  left: 41px;
 }
 
 .magento + svg .outer {
@@ -136,8 +136,8 @@
 .symfony {
     width: 200px;
     height: 200px;
-    top: 45px;
-    left: 45px;
+  top: 43px;
+  left: 41px;
 }
 
 .symfony + svg .outer {
@@ -146,8 +146,8 @@
 .mysql {
     width: 200px;
     height: 200px;
-    top: 45px;
-    left: 45px;
+    top: 43px;
+    left: 41px;
 }
 
 .mysql + svg .outer {
@@ -168,7 +168,6 @@
     fill: transparent;
     stroke: #333;
     stroke-width: 20;
-    stroke-dasharray: 534;
     transition: stroke-dashoffset 1s;
     -webkit-animation-play-state: running;
 
@@ -177,7 +176,6 @@
 }
 
 .chart:hover .outer {
-    stroke-dashoffset: 534 !important;
     -webkit-animation-play-state: paused;
 }
 /* END Circle colors and graphic positions */
