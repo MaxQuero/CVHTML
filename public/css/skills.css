@@ -39,7 +39,7 @@
     font-size : 25px;
     margin-top : 10px;
 }
-.chart .drupal, .chart .php, .chart .symfony, .chart .mysql, .chart .html, .chart .laravel, .chart .wordpress, .chart .angular{
+.chart .drupal, .chart .vuejs, .chart .symfony, .chart .mysql, .chart .html, .chart .laravel, .chart .wordpress, .chart .angular{
     position: absolute;
     max-height: 108px;
     top: 42px;
@@ -64,6 +64,10 @@
 .chart .angular{
     left : 46px;
 
+}
+
+.chart .vuejs{
+    top: 52px;
 }
 /* END Container styles */
 
@@ -107,15 +111,15 @@
     stroke: #dd1b16;
 }
 
-.php {
+.vuejs {
     width: 250px;
     height: 250px;
-  top: 43px;
-  left: 41px;
+    top: 43px;
+    left: 41px;
 }
 
-.php + svg .outer {
-    stroke: #6082ba;
+.vuejs + svg .outer {
+    stroke: #3fba84;
 }
 
 .drupal {
