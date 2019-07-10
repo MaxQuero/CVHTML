@@ -88,6 +88,8 @@ Modules - reusable parts of our design
   height: 24px;
   position: relative;
   top: -5%;
+    color: white;
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -101,14 +103,13 @@ Modules - reusable parts of our design
     left: -5%;
     top: -5%;
     margin : -6px -9px;
-
   }
 }
   .cd-timeline-img.cd-book {
-  background: #00bcd4;
+  background: #c0392b;
 }
 .cd-timeline-img.cd-education {
-  background: #ffeb3b;
+  background: #3085a3;
 }
 
 @media only screen and (min-width: 1170px) {

@@ -39,7 +39,7 @@
     font-size : 25px;
     margin-top : 10px;
 }
-.chart .drupal, .chart .php, .chart .symfony, .chart .mysql, .chart .html, .chart .css, .chart .js, .chart .angular{
+.chart .drupal, .chart .php, .chart .symfony, .chart .mysql, .chart .html, .chart .laravel, .chart .wordpress, .chart .angular{
     position: absolute;
     max-height: 108px;
     top: 42px;
@@ -47,18 +47,18 @@
     background: white;
 }
 
-.chart .css{
-    top: 45px;
+.chart .laravel{
+    top: 65px;
 }
 
 .chart .html{
-    top : 45px;
-    left: 46px;
+    top: 61px;
+    left: 51px;
 }
 
-.chart .js{
+.chart .wordpress{
     top: 47px;
-    left : 51px;
+    left : 46px;
 }
 
 .chart .angular{
@@ -74,26 +74,26 @@
 }
 
 .html + svg .outer {
-    stroke: #e34f26;
+    stroke: #ffd733;
 }
 
-.css {
+.laravel {
     top: 55px;
     left: 48px;
 }
 
-.css + svg .outer {
-    stroke: #0d84ce;
+.laravel + svg .outer {
+    stroke: #fb503b;
 }
 
-.js {
+.wordpress {
     max-height: 90px;
   top: 43px;
   left: 41px;
 }
 
-.js + svg .outer {
-    stroke: #ffd733;
+.wordpress + svg .outer {
+    stroke: #464646;
 }
 
 .angular {
